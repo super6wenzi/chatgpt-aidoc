@@ -11,8 +11,9 @@
     
 ![gh_eb71470e2675_344](https://github.com/super6wenzi/chatgpt-aidoc/assets/48462615/38f22985-26aa-4ac8-a2b0-4a27d480649c)
 
-如果你也有好的想法，欢迎进群交流，大家一起交流AI
+此项目为抛砖引玉，如果你也有好的想法，欢迎进群交流，大家一起交流AI拥抱AI
 
-![32bce58eb3a9ead93fb3fd8f60483f1](https://github.com/super6wenzi/chatgpt-aidoc/assets/48462615/de755236-0439-46b8-8e5d-76583b08e8af)
+![32bce58eb3a9ead93fb3fd8f60483f1](https://github.com/super6wenzi/chatgpt-aidoc/assets/48462615/c55590c8-29f9-4a82-bbf6-a0b1ed15c6fc)
+
 
 
