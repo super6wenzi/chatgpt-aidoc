@@ -1,0 +1,113 @@
+{
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
+        }
+    },
+    "pages": [
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/gastronomy/gastronomy",
+            "style": {
+                "navigationBarTitleText": "餐学",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/studyGroup/studyGroup",
+            "style": {
+                "navigationBarTitleText": "学社",
+                "enablePullDownRefresh": false
+            }
+        },
+        {
+            "path": "pages/my/my",
+            "style": {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+        },
+        // {
+        //     "path": "pages/brandList/brandList",
+        //     "style": {
+        //         "navigationBarTitleText": "品牌列表",
+        //         "enablePullDownRefresh": false
+        //     }
+        // },
+        // {
+        //     "path": "pages/addBrand/addBrand",
+        //     "style": {
+        //         "navigationBarTitleText": "创建品牌",
+        //         "enablePullDownRefresh": false
+        //     }
+        // },
+        // {
+        //     "path": "pages/chooseType/chooseType",
+        //     "style": {
+        //         "navigationBarTitleText": "选择生成类型",
+        //         "enablePullDownRefresh": false
+        //     }
+        // },
+        {
+            "path": "pages/resultPage/resultPage",
+            "style": {
+                "navigationBarTitleText": "生成结果",
+                "enablePullDownRefresh": false
+            }
+        },
+		{
+		    "path": "pages/draw/draw",
+		    "style": {
+		        "navigationBarTitleText": "绘图",
+		        "enablePullDownRefresh": false
+		    }
+		},
+        {
+            "path": "pages/typeForm/typeForm",
+            "style": {
+                "navigationBarTitleText": "类型表单",
+                "enablePullDownRefresh": false
+            }
+        }
+    ],
+    "lazyCodeLoading": "requiredComponents",
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "哈哈哈啊",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "color": "#b7b7b7",
+        "selectedColor": "#000000",
+        "borderStyle": "white",
+        "backgroundColor": "#ffffff",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "iconPath": "static/images/index_icon_gray.png",
+                "selectedIconPath": "static/images/index_icon_black.png",
+                "text": "首页"
+            },
+    //         {
+    //             "pagePath": "pages/draw/draw",
+				// "iconPath": "static/images/index_icon_gray.png",
+				// "selectedIconPath": "static/images/index_icon_black.png",
+    //             "text": "绘图"
+    //         },
+            {
+                "pagePath": "pages/my/my",
+                "iconPath": "static/images/my_icon_gray.png",
+                "selectedIconPath": "static/images/my_icon_black.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

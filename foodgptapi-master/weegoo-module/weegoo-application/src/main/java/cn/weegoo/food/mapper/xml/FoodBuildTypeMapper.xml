@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.weegoo.food.mapper.FoodBuildTypeMapper">
+
+	<sql id="foodBuildTypeColumns">
+		a.id AS "id",
+		a.food_content_type AS "foodContentType.id",
+		a.title AS "title",
+		a.icon AS "icon",
+		a.sort AS "sort",
+		a.is_show AS "isShow",
+		a.is_show_next AS "isShowNext",
+		a.keywords AS "keywords",
+		a.preposition AS "preposition",
+		a.create_by AS "createBy.id",
+		a.create_date AS "createDate",
+		a.update_by AS "updateBy.id",
+		a.update_date AS "updateDate",
+		a.del_flag AS "delFlag",
+
+		foodContentType.name AS "foodContentType.name"
+	</sql>
+
+	<sql id="foodBuildTypeJoins">
+
+		LEFT JOIN food_content_type foodContentType ON foodContentType.id = a.food_content_type
+	</sql>
+
+
+
+	<select id="findById" resultType="cn.weegoo.food.service.dto.FoodBuildTypeDTO">
+		SELECT
+			<include refid="foodBuildTypeColumns"/>
+		FROM food_build_type a
+		<include refid="foodBuildTypeJoins"/>
+		WHERE a.id = #{id} and a.del_flag = 0
+	</select>
+
+	<select id="findList" resultType="cn.weegoo.food.service.dto.FoodBuildTypeDTO">
+		SELECT
+			<include refid="foodBuildTypeColumns"/>
+		FROM food_build_type a
+		<include refid="foodBuildTypeJoins"/>
+	    ${ew.customSqlSegment}
+	</select>
+
+</mapper>

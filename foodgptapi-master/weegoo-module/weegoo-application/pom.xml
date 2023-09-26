@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.weegoo</groupId>
+        <artifactId>weegoo-module</artifactId>
+        <version>9.0</version>
+    </parent>
+
+
+    <artifactId>weegoo-application</artifactId>
+    <packaging>jar</packaging>
+
+    <name>weegoo-application</name>
+    <description>应用</description>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.weegoo</groupId>
+            <artifactId>weegoo-admin</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.plexpt</groupId>
+            <artifactId>chatgpt</artifactId>
+            <version>4.0.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.weegoo</groupId>
+            <artifactId>weegoo-application-common</artifactId>
+            <version>9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.weegoo</groupId>
+            <artifactId>weegoo-file</artifactId>
+            <version>9.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

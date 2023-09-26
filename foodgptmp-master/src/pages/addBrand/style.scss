@@ -1,0 +1,212 @@
+.safe_footer {
+    height: constant(safe-area-inset-bottom);
+    height: env(safe-area-inset-bottom);
+}
+.body{
+    width: 100vw;
+    padding: 0 30rpx;
+    min-height: 100vh;
+    
+    &-step{
+        width: 100%;
+        overflow: scroll;
+        margin-top: 40rpx;
+        margin-bottom: 85rpx;
+        @include flex(row,center,center);
+        
+        &-item{
+            flex-shrink: 0;
+            @include flex(column,center,center);
+            
+            &-title{
+                margin-bottom: 15rpx;
+                @include font(#C3C3C3,22rpx);
+            }
+            
+            &-side{
+                width: 46rpx;
+                height: 46rpx;
+                overflow: hidden;
+                border-radius: 50%;
+                // background-color: #101010;
+                background-color: #C3C3C3;
+                @include font(#fff,24rpx);
+                @include flex(initial,center,center);
+            }
+            
+        }
+        
+        &-block{
+            margin: 45rpx 10rpx 0;
+            @include flex(row,center,center);
+            
+            &-item{
+                width: 6rpx;
+                height: 6rpx;
+                border-radius: 50%;
+                background-color: #C3C3C3;
+                
+                &+&{
+                    margin-left: 13rpx;
+                }
+                
+                &:nth-child(3){
+                    width: 11rpx;
+                    height: 11rpx;
+                }
+                
+            }
+            
+        }
+        
+    }
+    
+    &-title{
+        width: 100%;
+        padding: 0 75rpx;
+        @include font(#101010,28rpx);
+        @include flex(row,space-between,center);
+        
+        label{
+            @include font(#919191,22rpx);
+        }
+        
+    }
+    
+    &-int{
+        width: 100%;
+        height: 110rpx;
+        padding: 0 40rpx;
+        margin-top: 28rpx;
+        line-height: 110rpx;
+        background-color: #F4F4F4;
+        @include font(#000,35rpx,bold);
+    }
+    
+    &-submit{
+        width: 100%;
+        height: 112rpx;
+        margin-top: 48rpx;
+        line-height: 112rpx;
+        background-color: #161616;
+        @include font(#fff,35rpx,bold,center);
+    }
+    
+    &-wrap{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50rpx;
+        
+        &-item{
+            width: calc((100% - 30rpx)/2);
+            @include flex(column,center,center);
+            
+            &+&{
+                margin-left: 30rpx;
+            }
+            
+            label{
+                margin-bottom: 26rpx;
+                @include font(#101010,28rpx);
+            }
+            
+            &-int{
+                width: 100%;
+                height: 110rpx;
+                padding: 0 20rpx;
+                line-height: 110rpx;
+                background-color: #F4F4F4;
+                @include font(#101010,35rpx,bold,center);
+            }
+            
+        }
+        
+        .solar{
+            width: 100%;
+            
+            &-side{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                
+                &-item{
+                    height: 86rpx;
+                    line-height: 86rpx;
+                    margin-right: 25rpx;
+                    margin-bottom: 25rpx;
+                    background-color: #F4F4F4;
+                    width: calc((100% - 125rpx)/6);
+                    @include font(#9D9D9D,39rpx,unset,center);
+                    
+                    &:nth-child(6n){
+                        margin-right: 0;
+                    }
+                    
+                    label{
+                        color: #9D9D9D;
+                        font-size: 22rpx;
+                    }
+                    
+                }
+                
+                &.solar-sex {
+                    justify-content: space-around;
+                    
+                    .solar-side-item {
+                        margin: 0;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
+    &-spot{
+        padding: 0 48rpx;
+        margin-bottom: 25rpx;
+        @include font(#101010,28rpx);
+    }
+    
+    &-dec{
+        padding: 0 48rpx;
+        margin-bottom: 32rpx;
+        @include font(#101010,21rpx);
+    }
+    
+    &-textin{
+        width: 100%;
+        height: 633rpx;
+        padding: 50rpx;
+        box-sizing: border-box;
+        background-color: #F4F4F4;
+    }
+    
+}
+
+._active{
+    
+    .body-step-item-title{
+        color: #000;
+    }
+    
+    .body-step-item-side{
+        background-color: #000;
+    }
+    
+}
+
+._marginTop{
+    margin-top: 50rpx;
+}
+
+._choose{
+    color: #fff!important;
+    background-color: #101010!important;
+    
+    label{
+        color: #fff!important;
+    }
+    
+}
