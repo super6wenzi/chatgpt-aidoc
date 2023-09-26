@@ -13,6 +13,6 @@
 
 如果你也有好的想法，欢迎进群交流，大家一起交流AI
 
-![32bce58eb3a9ead93fb3fd8f60483f1](https://github.com/super6wenzi/chatgpt-aidoc/assets/48462615/ee206956-ae24-475d-85b0-c61699e7e08a)
+![32bce58eb3a9ead93fb3fd8f60483f1](https://github.com/super6wenzi/chatgpt-aidoc/assets/48462615/de755236-0439-46b8-8e5d-76583b08e8af)
 
 
